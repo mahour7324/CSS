@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body , main{
+    height: 100%;
+    width: 100%;
+}
+
+.px h1{
+    background-color: aquamarine;
+    font-size: 50px;
+}
+.percentage{
+    width: 50%;
+    background-color: aliceblue;
+}
+.percentage h1{
+    font-size: 100%;
+    
+}
+
+.vw{
+    background-color: royalblue;
+    width: 50vw;
+
+}
+.vw h1{
+    font-size: 5vw;
+}
+
+.vmax{
+    background-color: tomato;
+    width: 50vmax;
+    
+}
+.vmax{
+    font-size: 1vmax;
+}
+
+.em{
+    background-color: rgb(200, 89, 89);
+    font-size: 5px;
+}
+
+#multiple{
+    font-size: 2em; /*means 20 px*/
+}
+#parent{
+    font-size: 3em; /*means 30 px*/
+}

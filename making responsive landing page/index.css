@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+/*-----------------------header------------------------------------*/
+.main{
+    position: relative;
+
+}
+header{
+    height: 75px;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.257);
+    filter: drop-shadow();
+    /* font-size: 1vw; */
+    
+}
+.logo img{
+    width: 30px;
+}
+
+.nav-f{
+    display: flex;
+    gap:5vw;
+    align-items: center;
+}
+    
+    
+.nav-f a{
+    text-decoration: none;
+    color: black;
+}
+.nav-s{
+    display: flex;
+    gap:5vw;
+}
+
+.nav-s a{
+    text-decoration: none;
+    color: black;
+}
+/*-----------------------------------------------------------------------*/
+
+/*----------------------------content-----------------------------------------*/
+.content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+
+.content-r{
+
+    width: 400px;
+    /* padding: 20px; */
+    font-size: 10px;
+}
+.content-r h1{
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 4em;
+}
+.content-r h1 span{
+    color: royalblue;
+}
+.content-r p{
+    margin-bottom: 30px;
+    /* font-size: 10px; */
+    font-size: 1.4em;
+    
+}
+button{
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: aqua;
+    border: none;
+    filter: drop-shadow(2px 7px 5px black);
+}
+button:hover{
+    cursor: pointer;
+    filter: none
+}
+.content-l img{
+    width: 300px;
+    border-radius: 5px;
+}
+
+/*---------------------foooter-------------------------------*/
+footer{
+    background-color: black;
+    color: white;
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 100%;
+
+    
+}
+
+@media (max-width:768px) {
+    .nav-s{
+        display: none;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content-r{
+        /* font-size: 20px; */
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .content-l{
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        font-size: 10px;
+    }
+}

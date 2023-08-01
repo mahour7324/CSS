@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100%;
+    height: 100;
+}
+/*----------------without relatave using absolute------------------*/
+.outer{
+    /* position: relative; */
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-bottom: 10px solid black dotted;
+}
+.inner{
+    
+    /* position: relative; */
+    background-color: red;
+    width: 50%;
+    height: 50%;
+}
+.dinner{
+    position: absolute;/*by using absolute element breake all boudry to all upper parent util it found relative upper parent*/
+    background-color: black;
+    width: 50%;
+    height: 50%;
+}
+/*-------------------------------------------------------------------*/
+
+/*----------------without relatave using absolute------------------*/
+.parent{
+    /* position: relative; */
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    background-color: royalblue;
+}
+.child{
+    
+    position: relative;
+    background-color: red;
+    width: 50%;
+    height: 50%;
+}
+.grandchild{
+    position: absolute;/*by using absolute element breake all boudry to all upper parent util it found relative upper parent*/
+    background-color: black;
+    width: 50%;
+    height: 50%;
+    
+}
+/*-------------------------------------------------------------------*/
+
+/*-------------using flexbox------------------------------------------*/
+
+.flexbox{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 100px;
+}
+
+
+.box1{
+    width: 1em;
+    height: 1em;
+    background-color: red;
+}
+.box2{
+    width: 2em;
+    height: 2em;
+    background-color: red;
+}
+.box3{
+    width: 3em;
+    height:3em;
+    background-color: red;
+}
+.box4{
+    width: 4em;
+    height: 4em;
+    background-color: rgb(56, 45, 45);
+}
+
+@media only screen and (max-width:768px) {
+    body{
+        background-color: black;
+    }
+    
+}
